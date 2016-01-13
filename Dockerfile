@@ -20,3 +20,9 @@ RUN ln -s $STORM_HOME/bin/storm /usr/bin/storm
 VOLUME /mnt/storm
 
 ADD storm.yaml $STORM_HOME/conf/storm.yaml
+
+EXPOSE 6700-6703
+EXPOSE 6627
+
+ENTRYPOINT ["/usr/bin/storm"]
+CMD ["nimbus"]
