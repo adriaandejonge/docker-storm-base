@@ -1,3 +1,8 @@
 storm.zookeeper.servers:
   - "zookeeper"
 storm.local.dir: "/mnt/storm"
+supervisor.slots.ports:
+    - 6700
+    - 6701
+    - 6702
+    - 6703
